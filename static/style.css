@@ -1,0 +1,63 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* ------------------------------ navbar */
+.container-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.navbar {
+    flex: 1;
+    margin-top: 5px;
+}
+
+.left {
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+.logo {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------------------ home */
+.container-homepage {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+}
+
+.homepage-column-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.homepage-column {
+    flex: 1;
+    text-align: center;
+}
+
+.header-homepage {
+    text-align: center;
+}
+

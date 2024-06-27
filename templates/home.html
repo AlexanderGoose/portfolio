@@ -1,0 +1,26 @@
+{% extends 'template.html' %}
+
+
+{% block content %}
+
+<div class="container-homepage">
+
+    <div class="header-homepage">
+        <h1>Alexander Gustafson</h1>
+    </div>
+
+    <div class="homepage-column-container">
+        <div class="homepage-column left-hp">
+            <h1>Developer</h1>
+            <p>B.S. Computer Science -- University of Colorado, Boulder</p>
+        </div>
+    
+        <div class="homepage-column right-hp">
+            <p>Fullstack developer specializing in Python applications. Check out some of my <a href="{{ url_for('projects') }}">projects</a> here!</p>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}
