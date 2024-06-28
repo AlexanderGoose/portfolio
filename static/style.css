@@ -61,12 +61,7 @@ body {
 .container-homepage {
     display: flex;
     flex-direction: column;
-
-    /* margin-top: 50px; */
     margin-top: 5%;
-    /* height: 90%; */
-
-
 }
 
 .homepage-column-container {
@@ -80,9 +75,10 @@ body {
     /* text-align: center; */
 
     margin-top: 50px;
-    padding: 5%;
-    /* margin-left: 5%;
-    margin-right: 5%; */
+    /* padding: 5%; */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
 }
 
 .header-homepage {
@@ -186,15 +182,20 @@ span.fade {
         align-items: center;
     }
 
+    .container-homepage {
+        margin-top: 0%;
+    }
+
     .homepage-column {
         width: 100%;
-        margin-top: 0px;
+        margin-top: 0%;
         /* padding: 10px; */
     }
 
     .right-hp {
         margin-left: 5%;
         margin-right: 5%;
+        margin-top: 15px;
     }
     
     .hp-col-text {
