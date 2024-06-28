@@ -164,24 +164,41 @@ span.fade {
 /* ------------------------- media screen */
 @media only screen and (max-width: 800px) {
 
+    body { /* for mobile bg gradient */
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
     /* ------------------------- navbar */
     .home-page-link {
         display: none;
     }
 
+    .navbar.right {
+        gap: 10px;
+    }
+
     /* ------------------------- home */
     .homepage-column-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .homepage-column {
-        margin-top: 20px;
-        margin: 0;
+        width: 100%;
+        margin-top: 0px;
+        /* padding: 10px; */
     }
 
     .right-hp {
         margin-left: 5%;
         margin-right: 5%;
+    }
+    
+    .hp-col-text {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
     }
 
     /* ------------------------- resume */
