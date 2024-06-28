@@ -12,4 +12,4 @@ def projects():
 
 @app.route('/resume')
 def resume():
-    pass
+    return render_template('resume.html')

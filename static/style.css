@@ -1,6 +1,8 @@
 body {
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
+    background-color: black;
     font-family: 'Inconsolata', monospace;
+    color: white;
 }
 
 /* ------------------------------ navbar */
@@ -8,12 +10,14 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    height: 50px;
+    /* background-color: #CD853F; */
+    width: 100%;
 }
 
 .navbar {
     flex: 1;
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
 
 .left {
@@ -36,7 +40,8 @@ body {
 
 .navbar-item {
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    color: white;
 }
 
 /* ------------------------------ home */
@@ -44,20 +49,95 @@ body {
     display: flex;
     flex-direction: column;
 
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 5%;
+    height: calc(100% - 50px);
 }
 
 .homepage-column-container {
     display: flex;
     flex-direction: row;
+    align-items: center; /* Puts them on the same horizontal axis */
 }
 
 .homepage-column {
     flex: 1;
-    text-align: center;
+    /* text-align: center; */
+
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .header-homepage {
     text-align: center;
+    font-size: 30px;
+
+    position: relative;
+    left: -100%;
+    animation: enterFromLeft 1s forwards;
 }
 
+#hp-col-right-text {
+    font-size: 20px;
+}
+
+/* ------------------------- resume */
+#container-resume-main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* #resume-top-section-container {
+    margin-left: 10%;
+    margin-right: 10%;
+} */
+
+.project {
+    margin-bottom: 30px;
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+.project-text {
+    margin-left: 10%;
+}
+
+.project-link {
+    color: white;
+}
+
+#resume-middle-section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.resume-middle {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.resume-middle-item {
+    margin-left: 5%;
+}
+
+.resume-middle-item-text {
+    margin-left: 10%;
+}
+
+
+/* ------------------------- animations */
+@keyframes enterFromLeft {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+/* ------------------------- media screen */
+@media only screen and (max-width: 600px) {
+
+
+}
