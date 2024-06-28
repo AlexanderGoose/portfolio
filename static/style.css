@@ -1,22 +1,17 @@
+/* ------------------------------ overall styling */
 html, body {
-    /* background-color: #F5F5F5; */
-    /* background: linear-gradient(to bottom, #F5F5F5, black);
-    font-family: 'Inconsolata', monospace; */
-    /* color: white; */
     padding: 0;
     margin: 0;
     height: 100%;
 }
 
 body {
-    /* background: linear-gradient(to bottom, #F5F5F5, #D2B48C); */
-    /* background: linear-gradient(to bottom, #F5F5F5, #FFF8DC); */
     background: linear-gradient(to bottom, #2F4F4F, #556B2F);
-    /* color: #FFF0F5; */
-    color: #D8BFD8;
+    color: #FFF0F5;
     background-attachment: fixed;
     font-family: 'Inconsolata', monospace;
 }
+
 
 /* ------------------------------ navbar */
 .container-navbar {
@@ -24,12 +19,7 @@ body {
     flex-direction: row;
     align-items: center;
     height: 50px;
-    /* background-color: #8FBC8F; */
-    /* background-color: rgb(143, 188, 143, 0.5); */
-    /* background-color: rgb(205, 133, 63, 0.3); */
-    /* background-color: #FFF0F5; */
     background-color: #D8BFD8;
-
     width: 100%;
 }
 
@@ -58,46 +48,41 @@ body {
 .navbar-item {
     text-decoration: none;
     color: black;
-    /* color: white; */
 }
+
 
 /* ------------------------------ home */
-/* .container-homepage {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-} */
-
-.homepage-column-container {
+.container-homepage {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Puts them on the same horizontal axis */
-}
-
-.homepage-column {
-    flex: 1;
-    /* text-align: center; */
-
-    margin-top: 50px;
-    /* padding: 5%; */
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 5%;
+    gap: 50px;
 }
 
-.header-homepage {
-    text-align: center;
-    font-size: 30px;
+.hp-col {
+    flex: 1;
 }
 
-#hp-col-right-text {
+.fancy-name {
+    font-size: 100px;
+}
+
+.hp-col-text-header {
+    font-size: 40px;
+}
+
+.hp-col-text {
     font-size: 20px;
 }
 
 .project-link-hp {
-    /* color: #FFF0F5; */
     color: #D8BFD8;
 }
+
 
 /* ------------------------- resume */
 #container-resume-main {
@@ -105,11 +90,6 @@ body {
     margin-right: 10%;
     color: #FFF0F5;
 }
-
-/* #resume-top-section-container {
-    margin-left: 10%;
-    margin-right: 10%;
-} */
 
 .project {
     margin-bottom: 30px;
@@ -122,7 +102,6 @@ body {
 }
 
 .project-link {
-    /* color: black; */
     color: #D8BFD8;
 }
 
@@ -146,46 +125,6 @@ body {
     display: block;
 }
 
-span {
-    opacity: 0;
-    transition: all 0.4s ease;
-}
-
-span.fade {
-    opacity: 1;
-}
-
-
-/* TESTING */
-.container-homepage {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    gap: 50px;
-}
-
-.hp-col {
-    flex: 1;
-    /* padding: 20px; */
-}
-
-.fancy-name {
-    font-size: 100px;
-    color: #D8BFD8;
-}
-
-.hp-col-text-header {
-    font-size: 40px;
-}
-
-.hp-col-text {
-    font-size: 20px;
-}
-
 
 /* ------------------------- animations */
 @keyframes enterFromLeft {
@@ -197,6 +136,17 @@ span.fade {
     }
   }
 
+
+span { /* used for the fancy-name display */
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+span.fade {
+    opacity: 1;
+}
+
+
 /* ------------------------- media screen */
 @media only screen and (max-width: 800px) {
 
@@ -204,6 +154,7 @@ span.fade {
         height: 100vh;
         background-attachment: fixed;
     }
+
 
     /* ------------------------- navbar */
     .home-page-link {
@@ -214,34 +165,8 @@ span.fade {
         gap: 20px;
     }
 
+
     /* ------------------------- home */
-    /* .homepage-column-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container-homepage {
-        margin-top: 0%;
-    }
-
-    .homepage-column {
-        width: 100%;
-        margin-top: 0%;
-
-    }
-
-    .right-hp {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 15px;
-    }
-    
-    .hp-col-text {
-        margin-left: 5%;
-        margin-right: 5%;
-        text-align: center;
-    } */
-
     .container-homepage {
         flex-direction: column;
         text-align: center;
@@ -255,6 +180,7 @@ span.fade {
         padding: 0;
     }
 
+    
     /* ------------------------- resume */
     #container-resume-main {
         margin-left: 5%;
@@ -264,9 +190,4 @@ span.fade {
     #resume-middle-section-container {
         flex-direction: column;
     }
-
-    .fancy-name {
-        font-size: 60px;
-    }
-
 }
