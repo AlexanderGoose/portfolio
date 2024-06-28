@@ -22,7 +22,9 @@ body {
     align-items: center;
     height: 50px;
     /* background-color: #8FBC8F; */
-    background-color: rgb(143, 188, 143, 0.5);
+    /* background-color: rgb(143, 188, 143, 0.5); */
+    /* background-color: rgb(205, 133, 63, 0.3); */
+    background-color: #DEB887;
 
     width: 100%;
 }
