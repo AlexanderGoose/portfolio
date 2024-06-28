@@ -180,7 +180,11 @@ span.fade {
         padding: 0;
     }
 
-    
+    .fancy-name {
+        font-size: 60px;
+    }
+
+
     /* ------------------------- resume */
     #container-resume-main {
         margin-left: 5%;
