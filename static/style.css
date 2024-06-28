@@ -12,7 +12,8 @@ body {
     /* background: linear-gradient(to bottom, #F5F5F5, #D2B48C); */
     /* background: linear-gradient(to bottom, #F5F5F5, #FFF8DC); */
     background: linear-gradient(to bottom, #2F4F4F, #556B2F);
-    color: #FFF0F5;
+    /* color: #FFF0F5; */
+    color: #D8BFD8;
     background-attachment: fixed;
     font-family: 'Inconsolata', monospace;
 }
@@ -26,7 +27,8 @@ body {
     /* background-color: #8FBC8F; */
     /* background-color: rgb(143, 188, 143, 0.5); */
     /* background-color: rgb(205, 133, 63, 0.3); */
-    background-color: #FFF0F5;
+    /* background-color: #FFF0F5; */
+    background-color: #D8BFD8;
 
     width: 100%;
 }
@@ -93,13 +95,15 @@ body {
 }
 
 .project-link-hp {
-    color: #FFF0F5;
+    /* color: #FFF0F5; */
+    color: #D8BFD8;
 }
 
 /* ------------------------- resume */
 #container-resume-main {
     margin-left: 10%;
     margin-right: 10%;
+    color: #FFF0F5;
 }
 
 /* #resume-top-section-container {
@@ -118,7 +122,8 @@ body {
 }
 
 .project-link {
-    color: black;
+    /* color: black; */
+    color: #D8BFD8;
 }
 
 #resume-middle-section-container {
@@ -170,6 +175,7 @@ span.fade {
 
 .fancy-name {
     font-size: 100px;
+    color: #D8BFD8;
 }
 
 .hp-col-text-header {
