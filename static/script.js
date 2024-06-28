@@ -28,3 +28,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         timer = null;
     }
 });
+
+// https://www.youtube.com/watch?v=GUEB9FogoP8 
