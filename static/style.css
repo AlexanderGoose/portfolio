@@ -10,7 +10,9 @@ html, body {
 
 body {
     /* background: linear-gradient(to bottom, #F5F5F5, #D2B48C); */
-    background: linear-gradient(to bottom, #F5F5F5, #FFF8DC);
+    /* background: linear-gradient(to bottom, #F5F5F5, #FFF8DC); */
+    background: linear-gradient(to bottom, #2F4F4F, #556B2F);
+    color: #FFF0F5;
     background-attachment: fixed;
     font-family: 'Inconsolata', monospace;
 }
@@ -24,7 +26,7 @@ body {
     /* background-color: #8FBC8F; */
     /* background-color: rgb(143, 188, 143, 0.5); */
     /* background-color: rgb(205, 133, 63, 0.3); */
-    background-color: #DEB887;
+    background-color: #FFF0F5;
 
     width: 100%;
 }
@@ -91,7 +93,7 @@ body {
 }
 
 .project-link-hp {
-    color: black;
+    color: #FFF0F5;
 }
 
 /* ------------------------- resume */
