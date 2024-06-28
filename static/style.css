@@ -156,11 +156,14 @@ span.fade {
     align-items: center;
     justify-content: center;
     height: 80vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 50px;
 }
 
 .hp-col {
     flex: 1;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .fancy-name {
@@ -234,6 +237,14 @@ span.fade {
     .container-homepage {
         flex-direction: column;
         text-align: center;
+        justify-content: flex-start;
+        height: 60vh;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .hp-col {
+        padding: 0;
     }
 
     /* ------------------------- resume */
@@ -247,7 +258,7 @@ span.fade {
     }
 
     .fancy-name {
-        font-size: 50px;
+        font-size: 60px;
     }
 
 }
