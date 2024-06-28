@@ -1,8 +1,10 @@
 body {
-    /* background-color: #F5F5F5; */
-    background-color: black;
+    background-color: #F5F5F5;
+    /* background-color: black; */
     font-family: 'Inconsolata', monospace;
-    color: white;
+    /* color: white; */
+    padding: 0;
+    margin: 0;
 }
 
 /* ------------------------------ navbar */
@@ -11,13 +13,12 @@ body {
     flex-direction: row;
     align-items: center;
     height: 50px;
-    /* background-color: #CD853F; */
+    background-color: #5F9EA0;
     width: 100%;
 }
 
 .navbar {
     flex: 1;
-    /* margin-top: 5px; */
 }
 
 .left {
@@ -40,8 +41,8 @@ body {
 
 .navbar-item {
     text-decoration: none;
-    /* color: black; */
-    color: white;
+    color: black;
+    /* color: white; */
 }
 
 /* ------------------------------ home */
@@ -51,7 +52,7 @@ body {
 
     /* margin-top: 50px; */
     margin-top: 5%;
-    height: calc(100% - 50px);
+    /* height: calc(100% - 50px); */
 }
 
 .homepage-column-container {
@@ -65,21 +66,22 @@ body {
     /* text-align: center; */
 
     margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 5%;
+    /* margin-left: 5%;
+    margin-right: 5%; */
 }
 
 .header-homepage {
     text-align: center;
     font-size: 30px;
-
-    position: relative;
-    left: -100%;
-    animation: enterFromLeft 1s forwards;
 }
 
 #hp-col-right-text {
     font-size: 20px;
+}
+
+.project-link-hp {
+    color: black;
 }
 
 /* ------------------------- resume */
@@ -104,7 +106,7 @@ body {
 }
 
 .project-link {
-    color: white;
+    color: black;
 }
 
 #resume-middle-section-container {
@@ -123,6 +125,16 @@ body {
 
 .resume-middle-item-text {
     margin-left: 10%;
+    display: block;
+}
+
+span {
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+span.fade {
+    opacity: 1;
 }
 
 
@@ -137,7 +149,31 @@ body {
   }
 
 /* ------------------------- media screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
+    /* ------------------------- navbar */
+    .home-page-link {
+        display: none;
+    }
+
+    /* ------------------------- home */
+    .homepage-column-container {
+        flex-direction: column;
+    }
+
+    .homepage-column {
+        margin-top: 20px;
+        margin: 0;
+    }
+
+    .right-hp {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* ------------------------- resume */
+    #resume-middle-section-container {
+        flex-direction: column;
+    }
 
 }

@@ -8,7 +8,7 @@ def home():
 
 @app.route('/projects')
 def projects():
-    pass
+    return render_template('projects.html')
 
 @app.route('/resume')
 def resume():
