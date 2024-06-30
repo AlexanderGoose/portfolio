@@ -283,21 +283,21 @@ span.fade {
     }
 
     .proj-1-img {
-        width: 80%;
+        width: 95%;
         display: block;
     }
     
     .proj-2-img {
-        width: 80%;
+        width: 95%;
         justify-content: center;
     }
     
     .proj-3-img {
-        width: 30vh;
+        width: 50%;
     }
     
     .proj-4-img {
-        width: 50vh;
+        width: 95%;
     } 
 
     .proj-1-left-col, .proj-2-left-col, .proj-3-left-col, .proj-4-left-col,
@@ -311,5 +311,9 @@ span.fade {
     .col-2,
     .col-4 {
         flex-direction: column-reverse;
+    }
+
+    .project-end {
+        font-size: 25px;
     }
 }
