@@ -174,7 +174,6 @@ img {
 .resume-middle {
     flex: 1;
     margin-right: 20px;
-    margin-top: 50px;
 }
 
 .resume-middle-item {
@@ -182,7 +181,33 @@ img {
 }
 
 .resume-middle-item-text {
-    margin-left: 10%;
+    margin-left: 5%;
+    display: block;
+}
+
+#resume-top-section-container {
+    margin-top: 100px;
+}
+
+.resume-rel-courses {
+    margin-left: 5%;
+}
+
+.resume-rel-courses-text {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.resume-jobs-container {
+    margin-top: 100px;
+}
+
+.job-container-header {
+    text-align: center;
+}
+
+.job-text {
+    margin-left: 5%;
     display: block;
 }
 
