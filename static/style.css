@@ -153,13 +153,13 @@ img {
 }
 
 .project {
-    margin-bottom: 30px;
-    margin-left: 5%;
+    /* margin-bottom: 30px; */
+    /* margin-left: 5%; */
     font-size: 25px;
 }
 
 .project-text {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .project-link {
@@ -189,9 +189,6 @@ img {
     margin-top: 100px;
 }
 
-.resume-rel-courses {
-    margin-left: 5%;
-}
 
 .resume-rel-courses-text {
     margin-left: 5%;
@@ -202,7 +199,7 @@ img {
     margin-top: 100px;
 }
 
-.job-container-header {
+.section-header {
     text-align: center;
 }
 
@@ -279,6 +276,10 @@ span.fade {
 
     #resume-middle-section-container {
         flex-direction: column;
+    }
+
+    .res-mid-right {
+        margin-top: 100px;
     }
 
     /* ------------------------- project */
