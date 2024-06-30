@@ -149,7 +149,7 @@ img {
 .resume-header {
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .project {
@@ -284,12 +284,10 @@ span.fade {
 
     .proj-1-img {
         width: 95%;
-        display: block;
     }
     
     .proj-2-img {
         width: 95%;
-        justify-content: center;
     }
     
     .proj-3-img {
