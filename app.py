@@ -15,3 +15,8 @@ def projects():
 @app.route('/resume')
 def resume():
     return render_template('resume.html', title='Resume')
+
+
+if __name__ == '__main__': # just added 
+    app.run()
+    # app.run(ssl_context=('cert.pem', 'key.pem'))

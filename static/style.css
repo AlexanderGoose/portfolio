@@ -153,8 +153,8 @@ img {
 
 /* ------------------------- resume */
 #container-resume-main {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     color: #FFF0F5;
 }
 
@@ -302,8 +302,24 @@ span.fade {
         flex-direction: column;
     }
 
+    .res-mid-left {
+        text-align: center;
+    }
+
     .res-mid-right {
-        margin-top: 100px;
+        margin-top: 50px;
+    }
+
+    .resume-jobs-container {
+        margin-top: 50px;
+    }
+
+    #resume-top-section-container {
+        margin-top: 50px;
+    }
+
+    .resume-header {
+        margin-bottom: 30px;
     }
 
     /* ------------------------- project */
