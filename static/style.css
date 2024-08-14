@@ -8,9 +8,9 @@ html, body {
 
 body {
     background: linear-gradient(to bottom, #2F4F4F, #556B2F);
-    /* color: #FFF0F5; */
     color: white;
     background-attachment: fixed;
+    height: 100vh;
     font-family: 'Inconsolata', monospace;
     line-height: 1.2;
 }
@@ -22,9 +22,14 @@ body {
     flex-direction: row;
     align-items: center;
     height: 50px;
-    /* background-color: #D8BFD8; */
     background-color: white;
     width: 100%;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -61,10 +66,14 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 80vh;
     margin-left: 5%;
     margin-right: 5%;
     gap: 50px;
+
+    display: flex;
+    height: 100vh;
+
+    margin-top: 100px;
 }
 
 .hp-col {
@@ -92,7 +101,7 @@ body {
 .project-container-main {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 img {
@@ -144,6 +153,8 @@ img {
     margin-left: 20%;
     margin-right: 20%;
     color: #FFF0F5;
+
+    margin-top: 100px;
 }
 
 .resume-header {
@@ -261,6 +272,7 @@ span.fade {
         height: 20vh;
         margin-left: 5%;
         margin-right: 5%;
+        gap: 0;
     }
 
     .hp-col {
@@ -295,7 +307,7 @@ span.fade {
     .project-container-main {
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
 
     .proj-container-main {
@@ -337,7 +349,6 @@ span.fade {
         display: flex;
         justify-content: center; /* Center the images horizontally */
         align-items: center; /* Center the images vertically */
-        /* width: 100%;  */
     }
 
     .col-2,
