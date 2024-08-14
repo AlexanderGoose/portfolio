@@ -13,7 +13,7 @@ body {
     height: 100vh;
     font-family: 'Inconsolata', monospace;
     line-height: 1.2;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -72,10 +72,10 @@ body {
     gap: 50px;
 
     /* height: 100vh; */
-    /* height: 80vh; */
+    height: 80vh;
 
     /* margin-top: 100px; */
-    height: calc(100vh - 50px); /* adjusts for navbar */
+    /* height: calc(100vh - 50px); */
     padding-top: 50px;
 }
 
