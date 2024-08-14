@@ -71,7 +71,8 @@ body {
     gap: 50px;
 
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 80vh;
 
     margin-top: 100px;
 }
@@ -217,6 +218,15 @@ img {
     display: block;
 }
 
+.pdf-link-container {
+    text-align: center;
+}
+
+.pdf-viewer {
+    text-decoration: none;
+    color: #D8BFD8;
+}
+
 
 /* ------------------------- animations */
 @keyframes enterFromLeft {
@@ -251,6 +261,8 @@ span.fade {
     body { /* for mobile bg gradient */
         height: 100vh;
         background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
     }
 
 
@@ -273,6 +285,8 @@ span.fade {
         margin-left: 5%;
         margin-right: 5%;
         gap: 0;
+
+        /* margin-top: 70px; */
     }
 
     .hp-col {
