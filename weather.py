@@ -7,11 +7,12 @@
 from datetime import datetime
 import requests
 import os
+import pytz
 
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?'
 # API_KEY = open('api_key.txt', 'r').read().strip()
 API_KEY = os.getenv('API_KEY')
-CITY = 'Lakewood'
+CITY = 'Denver'
 
 def kelvin_to_far(kelvin):
     celsius = kelvin - 273.15
@@ -47,22 +48,21 @@ def conditions_convert(conditions):
 
 def time_convert(local_time):
     local_time_formatted = local_time.strftime('%H:%M')
-    hour = local_time_formatted[:2]
-    tag = None
-    if int(hour[0]) == 0 or int(hour) <= 12:
-        tag = ' AM'
-        return local_time_formatted + tag
-    elif int(hour) > 12:
-        tag = ' PM'
-        return local_time_formatted + tag
+    hour = int(local_time_formatted[:2])
+
+    if hour == 0: # catch midnight
+        return f"12{local_time_formatted[2:]} AM"
+    elif 1 <= hour < 12:
+        return f"{hour}{local_time_formatted[2:]} AM"
+    elif hour == 12:
+        return f"{local_time_formatted} PM"
     else:
-        return local_time_formatted
+        return f"{hour - 12}{local_time_formatted[2:]} PM"
     
 
 url = BASE_URL + 'appid=' + API_KEY + '&q=' + CITY
 
 response = requests.get(url).json()
-
 
 # function that grabs info for app.py
 def get_weather_and_time():
@@ -75,7 +75,11 @@ def get_weather_and_time():
     conditions = response['weather'][0]['description']
     new_condition = conditions_convert(conditions)
 
-    local_time = datetime.now()
+    # local_time = datetime.now()
+    utc_time = datetime.utcnow()
+    local_timezone = pytz.timezone('America/Denver')
+
+    local_time = utc_time.replace(tzinfo=pytz.utc).astimezone(local_timezone)
     local_time_formatted = time_convert(local_time)
 
     icon_code = response['weather'][0]['icon']
