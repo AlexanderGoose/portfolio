@@ -6,15 +6,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html', title='Home')
+    return render_template('home.html', title='Home', body_class='home-body')
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html', title='Projects')
+    return render_template('projects.html', title='Projects', body_class='project-body')
 
 @app.route('/resume')
 def resume():
-    return render_template('resume.html', title='Resume')
+    return render_template('resume.html', title='Resume', body_class='resume-body')
 
 
 if __name__ == '__main__': # just added 

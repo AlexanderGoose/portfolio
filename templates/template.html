@@ -11,8 +11,9 @@
 
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body>
-
+<!-- <body class="{{ body_class | default('default-class') }}"> -->
+<body class="{{ body_class }}">
+    
 <div class="container-navbar">
     <div class="navbar left">
         <a class="logo" href="{{ url_for('home') }}">Goose</a>

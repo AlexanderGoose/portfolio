@@ -17,6 +17,7 @@ body {
 }
 
 
+
 /* ------------------------------ navbar */
 .container-navbar {
     display: flex;
@@ -72,11 +73,17 @@ body {
     gap: 50px;
 
     /* height: 100vh; */
-    height: 80vh;
+    /* height: 80vh; */
 
-    /* margin-top: 100px; */
-    /* height: calc(100vh - 50px); */
-    padding-top: 50px;
+    margin-top: 50px;
+    height: calc(100vh - 150px);
+    /* padding-top: 50px; */
+    /* border: solid 20px black; */
+    /* padding: 5px; */
+}
+
+body.home-body {
+    overflow: hidden;
 }
 
 .hp-col {
@@ -101,6 +108,10 @@ body {
 
 
 /* ------------------------- projects */
+body.project-body {
+    background: #2F4F4F;
+}
+
 .project-container-main {
     margin-left: 10%;
     margin-right: 10%;
@@ -152,11 +163,14 @@ img {
 
 
 /* ------------------------- resume */
+body.resume-body {
+    background: #2F4F4F;
+}
+
 #container-resume-main {
     margin-left: 20%;
     margin-right: 20%;
     color: #FFF0F5;
-
     margin-top: 100px;
 }
 
@@ -260,12 +274,12 @@ span.fade {
 /* ------------------------- media screen */
 @media only screen and (max-width: 800px) {
 
-    body { /* for mobile bg gradient */
+    /* body { 
         height: 100vh;
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
-    }
+    } */
 
 
     /* ------------------------- navbar */
@@ -280,19 +294,28 @@ span.fade {
 
     /* ------------------------- home */
     .container-homepage {
+        display: flex;
         flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        margin-bottom: 100px;
         text-align: center;
-        justify-content: flex-start;
-        /* height: 20vh; */
         margin-left: 5%;
         margin-right: 5%;
-        gap: 10px;
-
-        /* margin-top: 70px; */
+        height: auto;
+        gap: 0;
     }
 
-    .hp-col {
+    /* .hp-col {
         padding: 0;
+    } */
+
+    .hp-col .col-left {
+        margin-bottom: 20px;
+    }
+
+    .hp-col:last-child {
+        margin-bottom: 0;
     }
 
     .fancy-name {
