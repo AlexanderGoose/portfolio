@@ -62,6 +62,7 @@ body {
 }
 
 
+
 /* ------------------------------ home */
 .container-homepage {
     display: flex;
@@ -162,6 +163,19 @@ img {
     height: 50px;
 }
 
+.slick-carousel {
+    width: 50%;
+}
+
+.car-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.proj-column-container.research {
+    gap: 50px;
+}
 
 /* ------------------------- resume */
 body.resume-body {
@@ -418,7 +432,8 @@ span.fade {
     }
 
     .col-2,
-    .col-4 {
+    .col-4,
+    .col-3 {
         flex-direction: column-reverse;
     }
 
@@ -426,7 +441,17 @@ span.fade {
         font-size: 25px;
     }
 
+    .slick-carousel {
+        width: 90%;
+    }
 
+    .ecophys-title {
+        font-size: 40px;
+    }
+
+    .proj-column-container.research {
+        gap: 10px;
+    }
     /* ------------------------- about */
     .header-container {
         flex-direction: column-reverse;

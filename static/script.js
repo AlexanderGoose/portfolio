@@ -32,21 +32,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 // https://www.youtube.com/watch?v=GUEB9FogoP8 
 
 
-const $images = document.querySelectorAll('.proj-img');
-
-$images.forEach(($image) => {
-	$image.animate(
-		{
-			opacity: [0, 1],
-			clipPath: ['inset(45% 20% 45% 20%)', 'inset(0% 0% 0% 0%)'],
-		},
-		{
-			fill: 'both',
-			timeline: new ViewTimeline({
-				subject: $image,
-			}),
-			rangeStart: 'entry 25%',
-			rangeEnd: 'cover 50%',
-		}
-	);
-});
+$(document).ready(function(){
+    $('.slick-carousel').slick({
+      arrows: true,  // Display navigation arrows
+      dots: true,    // Display navigation dots
+      infinite: true, // Enable infinite scrolling
+      speed: 500,    // Transition speed
+      slidesToShow: 1, // Number of slides to show
+      slidesToScroll: 1 // Number of slides to scroll at a time
+    });
+  });
