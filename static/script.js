@@ -30,3 +30,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 // https://www.youtube.com/watch?v=GUEB9FogoP8 
+
+
+const $images = document.querySelectorAll('.proj-img');
+
+$images.forEach(($image) => {
+	$image.animate(
+		{
+			opacity: [0, 1],
+			clipPath: ['inset(45% 20% 45% 20%)', 'inset(0% 0% 0% 0%)'],
+		},
+		{
+			fill: 'both',
+			timeline: new ViewTimeline({
+				subject: $image,
+			}),
+			rangeStart: 'entry 25%',
+			rangeEnd: 'cover 50%',
+		}
+	);
+});

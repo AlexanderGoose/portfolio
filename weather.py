@@ -10,8 +10,8 @@ import os
 import pytz
 
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?'
-# API_KEY = open('api_key.txt', 'r').read().strip()
-API_KEY = os.getenv('API_KEY')
+API_KEY = open('api_key.txt', 'r').read().strip()
+# API_KEY = os.getenv('API_KEY')
 CITY = 'Denver'
 
 def kelvin_to_far(kelvin):
@@ -23,15 +23,15 @@ def kelvin_to_far(kelvin):
 # I have hard coded in replacements
 def conditions_convert(conditions):
     new_names = {
-        'clear sky': 'Clear Skies',
-        'few clouds': 'Partly Cloudy',
-        'scattered clouds': 'Mostly Cloudy',
-        'broken clouds': 'Mostly Cloudy',
-        'shower rain': 'Light Rain',
-        'rain': 'Raining',
-        'thunderstorm': 'Thunderstorms',
-        'snow': 'Snowing',
-        'mist': 'Foggy'
+        'clear sky': 'sunny',
+        'few clouds': 'partly cloudy',
+        'scattered clouds': 'mostly cloudy',
+        'broken clouds': 'mostly cloudy',
+        'shower rain': 'lightly raining',
+        'rain': 'raining',
+        'thunderstorm': 'thunderstorming',
+        'snow': 'snowing',
+        'mist': 'foggy'
     }
 
     new_condition_name = None
@@ -70,7 +70,7 @@ def get_weather_and_time():
     temp_far = round(kelvin_to_far(temp_kelvin), 1)
 
     feels_like_kelvin = response['main']['feels_like']
-    temp_feels_far = round(kelvin_to_far(feels_like_kelvin), 1)
+    temp_feels_far = int(kelvin_to_far(feels_like_kelvin))
 
     conditions = response['weather'][0]['description']
     new_condition = conditions_convert(conditions)
