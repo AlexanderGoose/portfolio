@@ -24,9 +24,9 @@ def kelvin_to_far(kelvin):
 def conditions_convert(conditions):
     new_names = {
         'clear sky': 'sunny',
-        'few clouds': 'partly cloudy',
-        'scattered clouds': 'mostly cloudy',
-        'broken clouds': 'mostly cloudy',
+        'few clouds': 'mostly sunny',
+        'scattered clouds': 'partly cloudy',
+        'broken clouds': 'cloudy',
         'shower rain': 'lightly raining',
         'rain': 'raining',
         'thunderstorm': 'thunderstorming',
