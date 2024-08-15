@@ -84,6 +84,7 @@ body {
 
 body.home-body {
     overflow: hidden;
+    line-height: 1.2;
 }
 
 .hp-col {
