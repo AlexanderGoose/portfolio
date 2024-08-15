@@ -244,6 +244,43 @@ body.resume-body {
 }
 
 
+/* ------------------------- about */
+body.about-body {
+    background: #2F4F4F;
+}
+
+.container-main {
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.conditions img {
+    vertical-align: middle;
+}
+
+.about-header-text, .about-header-img{
+    flex: 1;
+}
+
+.colorado-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-intro {
+    margin-bottom: 50px;
+}
+
+
 /* ------------------------- animations */
 @keyframes enterFromLeft {
     from {
@@ -274,13 +311,6 @@ span.fade {
 /* ------------------------- media screen */
 @media only screen and (max-width: 800px) {
 
-    /* body { 
-        height: 100vh;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-    } */
-
 
     /* ------------------------- navbar */
     .home-page-link {
@@ -305,10 +335,6 @@ span.fade {
         height: auto;
         gap: 0;
     }
-
-    /* .hp-col {
-        padding: 0;
-    } */
 
     .hp-col .col-left {
         margin-bottom: 20px;
@@ -346,7 +372,6 @@ span.fade {
     .project-container-main {
         margin-left: 5%;
         margin-right: 5%;
-        /* margin-top: 30px; */
     }
 
     .proj-container-main {
@@ -356,7 +381,6 @@ span.fade {
     .proj-title {
         text-align: center;
         font-size: 50px;
-
     }
     
     .proj-column-container {
@@ -397,5 +421,11 @@ span.fade {
 
     .project-end {
         font-size: 25px;
+    }
+
+
+    /* ------------------------- about */
+    .header-container {
+        flex-direction: column-reverse;
     }
 }

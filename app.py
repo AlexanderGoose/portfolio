@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask_talisman import Talisman
+import weather
 
 app = Flask(__name__)
 # talisman = Talisman(app) # forces https
@@ -16,6 +17,17 @@ def projects():
 def resume():
     return render_template('resume.html', title='Resume', body_class='resume-body')
 
+@app.route('/about')
+def about():
+    weather_data = weather.get_weather_and_time()
+
+    return render_template('about.html',
+                           body_class='about-body',
+                           temp=weather_data['temp'],
+                           feels_like=weather_data['feels_like'],
+                           conditions=weather_data['conditions'],
+                           time=weather_data['local_time'],
+                           icon=weather_data['icon_url'])
 
 if __name__ == '__main__': # just added 
     app.run()
