@@ -1,0 +1,120 @@
+{% extends 'template.html' %}
+
+{% block content %}
+
+<div id="container-resume-main">
+
+    <div class="resume-header">
+        <h1>704-780-2136</h1>
+        <h3>alexandergoose97@gmail.com</h3>
+
+        <div class="resume-header-link-container">
+            <a class="project-link" href="https://www.linkedin.com/in/alexander-gustafson/" target="_blank">LinkedIn</a>
+            <a class="project-link" href="https://github.com/AlexanderGoose" target="_blank">GitHub</a>
+        </div>
+
+        <p class="pdf-link-container">Open a printable resume focused on <a class="pdf-viewer bio" href="{{ url_for('static', filename='pdf/Resume_Biology.pdf') }}" target="_blank"><u>Biology</u></a> or <a class="pdf-viewer bio" href="{{ url_for('static', filename='pdf/Resume_Developer.pdf') }}" target="_blank"><u>Software Development</u></a>.</p>
+    </div>
+
+    
+    
+
+    <!-- middle section contains two columns. Left: Education and coursework, Right: SKills -->
+    <div id="resume-middle-section-container">
+        <div class="resume-middle res-mid-left">
+            <h1 class="section-header">Education</h1>
+            <h3><b>B.S. Computer Science (Dec 2024)</b></h3>
+                <i class="resume-middle-item-text">University of Colorado - Boulder, GPA: 3.89</i>
+            
+                <h3><b>B.S. Biology - Ecology, Evolution, and Environmental Biology (May 2021)</b></h3>
+                    <i class="resume-middle-item-text">Appalachian State University, GPA: 3.37</i>
+            
+        </div>
+
+    </div>
+
+    
+    <!-- JOBS-->
+    <div class="resume-jobs-container">
+        <div class="section-header"><h1>Work Experience</h1></div>
+
+        <div class="job-1">
+            <h2 class="job-title">Barista</h2>
+            <i class="job-text">Front Porch Coffee Shop, February 2024 - Present</i>
+            <p class="job-text">Foster strong customer relationships, deliver exceptional quality products, and cultivate a collaborative, supportive work environment. Acquired skills in equipment repair, significantly reducing company expenses by saving money in external repair costs.</p>
+        </div>
+
+        <div class="job-2">
+            <h2 class="job-title">Help Desk / Customer Service Agent</h2>
+            <i class="job-text">Tentrr, July 2023 - Dec 2023,  June 2022 - Nov 2022</i>
+            <p class="job-text">Diagnosed and resolved tech issues, reservation complications, maintenance, and shipping issues. Increased overall customer satisfaction metrics by several percentage points and consistently had the best call stats.</p>
+        </div>
+    
+        <div class="job-3">
+            <h2 class="job-title">Seasonal Store Host</h2>
+            <i class="job-text">evo Denver, Dec 2022 - Apr 2023</i>
+            <p class="job-text">Passionate Store Host at a leading ski shop, specializing in customer service, retail, and ski equipment expertise. Managed check-ins for appointments, efficiently handled waiting lists, and provided expert guidance in ski binding and equipment selection. Maintained a positive atmosphere, contributing to the shop's success and cultivating strong customer relationships.</p>
+        </div>
+
+        <div class="job-4">
+            <h2 class="job-title">Greenhouse Caretaker</h2>
+            <i class="job-text">The Mustard Seed Market, May 2021 - Jun 2022</i>
+            <p class="job-text">Built and fostered customer relationships, addressing plant issues, and assisting in plant selection for optimal yard and home aesthetics. Emphasized a welcoming atmosphere and customer satisfaction throughout the purchasing process. Initially served as a plant caretaker and salesman, recently transitioning to the role of Greenhouse Coordinator.</p>
+        </div>
+
+        <div class="job-5">
+            <h2 class="job-title">Research Assistant</h2>
+            <i class="job-text">Plant Ecophysiology Lab directed by Dr. Neufeld, October 2019 - May 2020</i>
+            <p class="job-text">I studied the effects of high light stress on ornamental plants, using croton as a study sample. My research aimed to determine how pigmentation changed with varying light intensity, which relied on the use of a <a class="project-link" href="https://www.licor.com/env/products/photosynthesis/LI-6800/" target="_blank"><u>LI-6800</u></a> and sampling.</p>
+            <p class="job-text">The use of a LI-6800 allowed me to test varying light situations and could see in real time how the plant was reacting. In addition to these lab trials, I conducted greenhouse trials by placing some plants in a shade chamber and comparing them to those in full sun.</p>
+            <p class="job-text">Using Excel, with the plan to use R later on, I was able to create visualizations of CO2 output versus light intensity to gain an understanding of how the plant responded to stress.</p>
+            <p class="job-text">While I was working on a presentation to showcase this work at The Association of Southern Biologist, the pandemic of 2020 brought my reserach to a sudden hault.</p>
+        </div>
+    </div>
+
+    <div class="skills-container">
+        <h1 class="section-header skills">Skills</h1>
+            <b>Well Versed:</b>
+            <p class="resume-middle-item-text">Python, Scala, C++, SQL (PostgreSQL, MySQL), HTML/CSS, Flask, DSA, OOP, Unix, Agile, Git</p>
+            
+            <b>Familiar:</b>
+            <p class="resume-middle-item-text">C#, JavaScript, scikit-learn, Bash, Tableau, R, Linux, AWS, Cloud Development</p>
+
+            <b>Relevant Courses: </b>
+            <p class="resume-rel-courses-text">Genetics, Data Science, Data Structures, Algorithms, Calculus II, Discrete Math, Data Mining, Botany, Applied Farm Operations, Agroecology, Statistics, Ecology, Organic Chemistry, Agroforestry, Coding Calculus Seminar.</p>
+    </div>
+
+    <!-- top section contains projects -->
+    <div id="resume-top-section-container">
+        <div>
+            <h1 class="section-header">Projects and Experience</h1>
+
+            <h3 class="project email-system">Automated Email App</h3>
+                <p class="project-text"><i>Designed for and utilized by Tentrr</i></p>
+                <p class="project-text">Developed an automated emailing system built with Python that reduced task time by 90%. Split a CSV of several hundred reservations into 50 unique PDFs and sent them out 2x/week to roughly 100 clients.</p>
+
+            <h3 class="project recipe">Recipe Management</h3>
+                <p class="project-text"><i><a class="project-link" href="https://www.chillcooks.com" target="_blank">chillcooks.com</a></i></p>
+                <p class="project-text">Developed a RESTful API that interacts with a remote PostgreSQL server hosted on Heroku.</p>
+
+            <h3 class="project habit-tracker">Habit Tracker</h3>
+                <p class="project-text"><i><a class="project-link" href="https://github.com/cinnafin/CSPB_3308_Group_1_TrackThat" target="_blank">GitHub Link</a>, Group Project at CU Boulder</i></p>
+                <p class="project-text">Gained experience with Agile development methods, weekly scrums, working with project managers, and using Git, GitHub and branches as part of a development team.</p>
+
+            <h3 class="project anders">Anders' Orbits</h3>
+                <p class="project-text"><i><a class="project-link" href="https://anders-orbits.com" target="_blank">anders-orbits.com</a></i></p>
+                <p class="project-text">Designed a simple portfolio website for my brother to showcase his senior capstone paper on orbits.</p>
+            <h3 class="project pygoose">Personal Portfolio</h3>
+                <p class="project-text"><i><a class="project-link" href="https://pygoose.com/resume">pygoose.com</a> (this site)</i></p>
+                <p class="project-text">A flask application that focuses on aesthetics and simplicity.</p>
+        </div>
+    </div>
+
+
+    <!-- bottom section containts other experience -->
+
+</div>
+
+<div class="spacer"></div>
+
+{% endblock %}
