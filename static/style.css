@@ -443,6 +443,10 @@ span.fade {
         gap: 10px;
     }
 
+    .bio-title {
+        font-size: 30px;
+    }
+
 
     /* ------------------------- about */
     .header-container {
