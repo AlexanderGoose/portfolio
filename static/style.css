@@ -17,7 +17,6 @@ body {
 }
 
 
-
 /* ------------------------------ navbar */
 .container-navbar {
     display: flex;
@@ -72,15 +71,8 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     gap: 50px;
-
-    /* height: 100vh; */
-    /* height: 80vh; */
-
     margin-top: 50px;
     height: calc(100vh - 150px);
-    /* padding-top: 50px; */
-    /* border: solid 20px black; */
-    /* padding: 5px; */
 }
 
 body.home-body {
@@ -146,12 +138,8 @@ img {
     max-width: 100%;
 }
 
-.project-page-text {
-    flex: 1;
-}
-
 .proj-4-img {
-    width: 50vh;
+    width: 60vh;
 }
 
 .project-end {
@@ -452,6 +440,8 @@ span.fade {
     .proj-column-container.research {
         gap: 10px;
     }
+
+    
     /* ------------------------- about */
     .header-container {
         flex-direction: column-reverse;
