@@ -7,7 +7,9 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to bottom, #2F4F4F, #556B2F);
+    /* background: linear-gradient(to bottom, #2F4F4F, #556B2F); */
+    background: linear-gradient(to right, #2F4F4F, #778899);
+
     color: white;
     background-attachment: fixed;
     height: 100vh;
@@ -353,6 +355,10 @@ span.fade {
 
     .fancy-name {
         font-size: 60px;
+    }
+
+    .home-body {
+        background: linear-gradient(to bottom, #2F4F4F, #778899);
     }
 
 
