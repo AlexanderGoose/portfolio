@@ -21,29 +21,49 @@ def kelvin_to_far(kelvin):
 
 # Because the verbage the API uses isn't good
 # I have hard coded in replacements
+# https://openweathermap.org/weather-conditions
 def conditions_convert(conditions):
     new_names = {
         'clear sky': 'sunny',
         'few clouds': 'mostly sunny',
         'scattered clouds': 'partly cloudy',
         'broken clouds': 'cloudy',
+        'overcast clouds': 'cloudy',
         'shower rain': 'lightly raining',
         'rain': 'raining',
         'thunderstorm': 'thunderstorming',
         'snow': 'snowing',
-        'mist': 'foggy'
+        'mist': 'misty',
+        'smoke': 'smoky outside',
+        'haze': 'hazy',
     }
 
     new_condition_name = None
-    for key, value in new_names.items():
-        if conditions in key:
-            new_condition_name = value
-            break
+
+    if 'thunderstorm' in conditions:
+        new_condition_name = 'thunderstorming'
+    elif 'drizzle' in conditions:
+        new_condition_name = 'drizzling'
+    elif 'rain' in conditions:
+        new_condition_name = 'raining'
+    elif 'snow' and 'rain' in conditions:
+        new_condition_name = 'experiencing a wintery mix'
+    elif 'snow' in conditions:
+        new_condition_name = 'snowing'
+
+    # if none of the general terms are found, check the
+    # specific list and loop through until condition found
+    else:
+        for key, value in new_names.items():
+            if conditions in key:
+                new_condition_name = value
+                break
 
     if new_condition_name != None:
         return new_condition_name
+    # if donesn't work, return whatever the api returned (shouldn't happen)
     else:
-        return conditions # if donesn't work, return whatever the api returned
+        return conditions
 
 
 def time_convert(local_time):
@@ -75,7 +95,6 @@ def get_weather_and_time():
     conditions = response['weather'][0]['description']
     new_condition = conditions_convert(conditions)
 
-    # local_time = datetime.now()
     utc_time = datetime.utcnow()
     local_timezone = pytz.timezone('America/Denver')
 
