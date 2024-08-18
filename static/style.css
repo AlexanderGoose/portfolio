@@ -250,6 +250,33 @@ body.resume-body {
     color: #D8BFD8;
 }
 
+.job-title-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.job-logo {
+    width: 60px;
+    height: 60px;
+}
+
+/* 
+.timeline {
+    position: relative;
+    margin-left: 5%;
+    border-left: 3px solid white; 
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-left: 10px;
+} */
+
 
 /* ------------------------- about */
 body.about-body {
@@ -306,6 +333,8 @@ body.about-body {
         opacity: 1;
     }
 }
+
+
 
 span { /* used for the fancy-name display */
     opacity: 0;
@@ -378,6 +407,17 @@ span.fade {
 
     .resume-header {
         margin-bottom: 30px;
+    }
+
+    .slide-in {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 0.5s ease-out;
+    }
+    
+    .visible {
+        opacity: 1;
+        transform: translateX(0);
     }
 
 
