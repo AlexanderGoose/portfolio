@@ -169,6 +169,7 @@ img {
     gap: 50px;
 }
 
+
 /* ------------------------- resume */
 body.resume-body {
     background: #2F4F4F;
@@ -316,15 +317,15 @@ body.about-body {
 }
 
 
-
-
 /* ------------------------- animations */
 @keyframes enterFromLeft {
     from {
       left: -100%;
+      opacity: 0;
     }
     to {
       left: 0;
+      opacity: 1;
     }
   }
 
@@ -407,17 +408,6 @@ span.fade {
 
     .resume-header {
         margin-bottom: 30px;
-    }
-
-    .slide-in {
-        opacity: 0;
-        transform: translateX(-100%);
-        transition: all 0.5s ease-out;
-    }
-    
-    .visible {
-        opacity: 1;
-        transform: translateX(0);
     }
 
 
