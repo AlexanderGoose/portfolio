@@ -64,6 +64,9 @@ body {
     color: black;
 }
 
+.home-page-link {
+    display: none;
+}
 
 
 /* ------------------------------ home */
@@ -260,6 +263,18 @@ body.resume-body {
 .job-logo {
     width: 60px;
     height: 60px;
+}
+
+.education {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.school-logo {
+    width: 30px;
+    height: 30px;
 }
 
 /* 
