@@ -10,9 +10,9 @@ import os
 import pytz
 
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?'
-# API_KEY = open('api_key.txt', 'r').read().strip()
-API_KEY = os.getenv('API_KEY')
-CITY = 'Denver'
+API_KEY = open('api_key.txt', 'r').read().strip()
+# API_KEY = os.getenv('API_KEY')
+CITY = 'Lakewood'
 
 def kelvin_to_far(kelvin):
     celsius = kelvin - 273.15
