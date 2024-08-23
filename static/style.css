@@ -133,12 +133,38 @@ img {
     align-items: center; 
 }
 
+/*  NEW  */
+
+.proj-column-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.proj-col {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+}
+
+.project-page-text {
+    padding: 10px;
+}
+
 .proj-img {
     opacity: 0;
-    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slick-carousel .car-img {
+    width: 100%;
     height: auto;
     max-width: 100%;
-    transition: transform 0.3s ease-in-out;
+    display: block;
 }
 
 .proj-img:hover {
@@ -155,10 +181,6 @@ img {
     opacity: 1;
 }
 
-.proj-4-img {
-    width: 60vh;
-}
-
 .project-end {
     text-align: center;
     margin-bottom: 100px;
@@ -168,31 +190,10 @@ img {
     height: 50px;
 }
 
-.slick-carousel {
-    opacity: 0;
-    width: 50%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.slick-carousel:hover {
-    transform: scale(1.05);
-}
-
 .slick-carousel.in-view {
     animation: proj-img-anim 2s ease;
     opacity: 1;  
-}
-
-.car-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.proj-column-container.research {
-    gap: 50px;
-}
-
+} 
 
 /* ------------------------- resume */
 body.resume-body {
