@@ -478,29 +478,6 @@ span.fade {
         justify-content: center;
     }
 
-    .proj-1-img {
-        width: 95%;
-    }
-    
-    .proj-2-img {
-        width: 95%;
-    }
-    
-    .proj-3-img {
-        width: 50%;
-    }
-    
-    .proj-4-img {
-        width: 95%;
-    } 
-
-    .proj-1-left-col, .proj-2-left-col, .proj-3-left-col, .proj-4-left-col,
-    .proj-1-right-col, .proj-2-right-col, .proj-3-right-col, .proj-4-right-col {
-        display: flex;
-        justify-content: center; /* Center the images horizontally */
-        align-items: center; /* Center the images vertically */
-    }
-
     .col-2,
     .col-4,
     .col-3 {
@@ -512,7 +489,7 @@ span.fade {
     }
 
     .slick-carousel {
-        width: 90%;
+        width: 80%;
     }
 
     .ecophys-title {
@@ -525,6 +502,17 @@ span.fade {
 
     .bio-title {
         font-size: 30px;
+    }
+
+    .proj-col {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slick-carousel {
+        width: 90%;    /* Slightly reduce width on mobile for padding */
+        margin: auto;  /* Center the carousel */
     }
 
 
