@@ -10,8 +10,8 @@ import os
 import pytz
 
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?'
-# API_KEY = open('api_key.txt', 'r').read().strip()
-API_KEY = os.getenv('API_KEY')
+API_KEY = open('api_key.txt', 'r').read().strip()
+# API_KEY = os.getenv('API_KEY')
 CITY = 'Lakewood'
 
 def kelvin_to_far(kelvin):
@@ -87,7 +87,7 @@ response = requests.get(url).json()
 # function that grabs info for app.py
 def get_weather_and_time():
     temp_kelvin = response['main']['temp']
-    temp_far = round(kelvin_to_far(temp_kelvin), 1)
+    temp_far = int(round(kelvin_to_far(temp_kelvin), 0))
 
     feels_like_kelvin = response['main']['feels_like']
     temp_feels_far = int(kelvin_to_far(feels_like_kelvin))
