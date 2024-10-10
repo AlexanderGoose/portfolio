@@ -13,6 +13,7 @@ body {
     background-attachment: fixed;
     height: 100vh;
     font-family: 'Inconsolata', monospace;
+    /* font-family: Arial, Helvetica, sans-serif; */
     line-height: 1.5;
 }
 
@@ -89,6 +90,10 @@ body.home-body {
     font-size: 100px;
 }
 
+.home-text {
+    font-size: 25px;
+}
+
 .hp-col-text-header {
     font-size: 40px;
 }
@@ -144,8 +149,8 @@ img {
 
 .proj-col {
     flex: 1;
-    max-width: 50%;
-    height: auto;
+    /* max-width: 50%;
+    height: auto; */
 }
 
 .project-page-text {
@@ -404,6 +409,10 @@ span.fade {
         gap: 20px;
     }
 
+    body.home-body {
+        background: #2F4F4F;
+    }
+
 
     /* ------------------------- home */
     .container-homepage {
@@ -411,6 +420,7 @@ span.fade {
         flex-direction: column;
         flex: 1;
         justify-content: center;
+        padding-top: 50px;
         margin-bottom: 100px;
         text-align: center;
         margin-left: 5%;
@@ -526,3 +536,66 @@ span.fade {
         margin-right: 5%;
     }
 }
+
+
+
+
+.navbar-3112 {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* margin-left: 20%; */
+    /* margin-right: 20%; */
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+  }
+  
+  .navbar-items-container-3112 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+  
+    margin-left: 20%; 
+    margin-right: 20%;
+  }
+  
+  .header-3112 {
+    margin-top: 100px;
+    margin-left: 20%; 
+    margin-right: 20%;
+    text-align: center;
+  }
+  
+  .updates-container-3112 {
+    margin-top: 100px;
+    margin-left: 20%; 
+    margin-right: 20%;
+  }
+  
+  
+  .navbar-item-3112 {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .spacer-3112 {
+    height: 50px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-items-container-3112,
+    .header-3112,
+    .updates-container-3112 {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .updates-container-3112 {
+      margin-top: 50px;
+    }
+  
+  }
