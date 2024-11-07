@@ -1,0 +1,28 @@
+@import 'about';
+@import 'animations';
+@import 'home';
+@import 'navbar';
+@import 'project';
+@import 'resume';
+
+
+/* ------------------------------ overall styling */
+// COMPILE WITH: sassc static/styles/main.scss static/css/main.css
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+body {
+    background: #FFFDF8; 
+    color: black;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Italiana', serif;
+    font-size: large;
+    font-weight: 800;
+    line-height: 1.5;
+}
+/* ------------------------------ END overall styling */

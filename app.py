@@ -7,22 +7,21 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html', title='Home', body_class='home-body')
+    return render_template('home.html', title='Home')
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html', title='Projects', body_class='project-body')
+    return render_template('projects.html', title='Projects')
 
 @app.route('/resume')
 def resume():
-    return render_template('resume.html', title='Resume', body_class='resume-body')
+    return render_template('resume.html', title='Resume')
 
 @app.route('/about')
 def about():
     weather_data = weather.get_weather_and_time()
 
     return render_template('about.html',
-                           body_class='about-body',
                            temp=weather_data['temp'],
                            feels_like=weather_data['feels_like'],
                            conditions=weather_data['conditions'],
