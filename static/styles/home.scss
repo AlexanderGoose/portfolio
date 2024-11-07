@@ -1,4 +1,8 @@
 /* ------------------------------ home */
+body.home_body {
+    overflow: hidden;
+}
+
 .container-homepage {
     display: flex;
     flex-direction: column;
