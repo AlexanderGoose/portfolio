@@ -67,8 +67,7 @@ span.fade {
 /* ------------------------- END animations */
 /* ------------------------------ home */
 body.home_body {
-    overflow: hidden;
-}
+  overflow: hidden; }
 
 .container-homepage {
   display: flex;
@@ -80,9 +79,7 @@ body.home_body {
   gap: 10%;
   height: 100vh;
   box-sizing: border-box;
-  font-family: 'Italiana', serif; 
-  overflow: hidden;
-}
+  font-family: 'Italiana', serif; }
 
 .hp-col {
   flex: 1; }
@@ -412,7 +409,6 @@ body {
   font-family: 'Italiana', serif;
   font-size: large;
   font-weight: 800;
-  line-height: 1.5; 
-}
+  line-height: 1.5; }
 
 /* ------------------------------ END overall styling */
