@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 // this function is for the slick scrolling carousel in project.html
+// https://kenwheeler.github.io/slick/
+
 $(document).ready(function(){
     $('.slick-carousel').slick({
       arrows: true,      // Display navigation arrows
@@ -42,35 +44,16 @@ $(document).ready(function(){
       infinite: true,    // Enable infinite scrolling
       speed: 500,        // Transition speed
       slidesToShow: 1,   // Number of slides to show
-      slidesToScroll: 1  // Number of slides to scroll at a time
+      slidesToScroll: 1,  // Number of slides to scroll at a time
+      adaptiveHeight: true
     });
   });
 
 
 
-// used only on mobile, makes the logos come in from the left
-// used to ensure only one at a time and ON SCROLL
-// used in resume.html
-document.addEventListener("DOMContentLoaded", function() {
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, {
-    threshold: 0.3 // Trigger when 50% of the element is in view
-});
-
-// const el = document.querySelector('.slide-in');
-// observer.observe(el);
-const slideInElements = document.querySelectorAll('.slide-in');
-slideInElements.forEach(el => observer.observe(el));
-});
-
-
-
 // Trigger CSS Animations when elements are scrolled into view
+// https://www.youtube.com/watch?v=iXlkRhjnnpk
+
 
 // This JS uses the Intersection Observer API to determine if objects are within the viewport
 // It addes an 'in-view' class to elements when they come into view (and removes the class when not on screen)

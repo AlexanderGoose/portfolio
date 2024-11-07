@@ -29,6 +29,14 @@ def about():
                            time=weather_data['local_time'],
                            icon=weather_data['icon_url'])
 
+@app.route('/project3112')
+def project3112():
+    return render_template('project_3112.html')
+
+@app.route('/proposal')
+def proposal():
+    return render_template('proposal.html')
+
 if __name__ == '__main__': # just added 
     app.run()
     # app.run(ssl_context=('cert.pem', 'key.pem'))
