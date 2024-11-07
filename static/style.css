@@ -109,10 +109,12 @@ body.home-body {
 
 .fancy-name {
     font-size: 100px;
+    text-align: center;
 }
 
 .home-text {
     font-size: 25px;
+    text-align: center;
 }
 
 .hp-col-text-header {
@@ -131,6 +133,7 @@ body.home-body {
 /* ------------------------- projects */
 body.project-body {
     background: #FFFDF8;
+    /* font-family: 'Playfair Display', serif; */
     /* background-color: #FFFAFA; */
     color: black;
 }
