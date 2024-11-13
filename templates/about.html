@@ -1,0 +1,70 @@
+{% extends 'template.html' %}
+
+{% block content %}
+
+<div class="container-main">
+
+    <div class="about header-container">
+        <div class="about-header-text">
+            <h1>Hi, I'm Alex.</h1>
+            <!-- and feels like {{ temp }}° -->
+            <h3 class="conditions">I live in Lakewood, Colorado. Here it's {{ time }} and {{ conditions }}. I'm probably writing code or riding my bike.</h3>
+        </div>
+    
+        <div class="about-header-img">
+            <img class="colorado-img" src="/static/images/nature.jpeg" alt="colorado pic">
+        </div>
+    </div>
+
+    <div class="about-section-two">
+        <p class="about about-intro">
+            While working in a botanical research lab at ASU, I developed a strong interest in using computers 
+            for data analysis and visualization, utilizing tools like R and Excel. During the pandemic, I took 
+            the opportunity to expand my skill set by learning Python. My growing passion for data structures and 
+            algorithms led me to pursue a second bachelor’s degree in Computer Science, with the aim of deepening 
+            my understanding of algorithm development and exploring various programming languages. My goal is to 
+            leverage this multidisciplinary background to contribute to valuable insights in business or ecology.
+        </p>
+
+        <div class="about about-interests">
+            <h3><u>Interests</u></h3>
+            <ul>
+                <li>Weather Data and Modeling</li>
+                <li>Geolocation Data and Visualizations</li>
+                <li>API Development</li>
+                <li>Quantitative Ecology and Ecological Modeling</li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!-- <div class="other-interests">
+            <h3><u>Favorites</u></h3>
+
+            <b>Place</b>
+            <p>- Telluride, CO | Great Sand Dunes NP</p>
+
+            <b>Book</b>
+            <p>- Ecology of the Planted Aquarium</p>
+
+            <b>Musician</b>
+            <p>- Mac Demarco</p>
+
+            <b>Programming Language</b>
+            <p>- Python</p>
+
+            <b>Animal</b>
+            <p>- Cats</p>
+
+            <b>Tree</b>
+            <p>- Norway Spruce</p>
+
+            <h5></h5>
+        </div> -->
+
+        
+    </div>
+
+    <div class="spacer"></div>
+</div>
+
+{% endblock %}
