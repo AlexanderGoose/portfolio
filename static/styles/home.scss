@@ -1,0 +1,89 @@
+/* ------------------------------ home */
+body.home_body {
+    overflow: hidden;
+    font-family: 'Italiana', serif;
+    font-size: large;
+}
+
+.hero {
+    background: url('/static/images/home_page.webp') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    width: 100vw;;
+  }
+
+.container-homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin-left: 5%;
+    // margin-right: 5%;
+    gap: 10%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Italiana', serif;
+}
+
+.hp-col {
+    flex: 1;
+}
+
+.fancy-name {
+    font-size: 120px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.home-text {
+    font-size: 25px;
+    text-align: center;
+}
+
+.hp-col-text-header {
+    font-size: 40px;
+}
+
+.hp-col-text {
+    font-size: 20px;
+}
+
+.project-link-hp {
+    color: #5F9EA0;
+}
+/* ------------------------------ END home */
+
+
+
+/* ------------------------- home mobile */
+@media only screen and (max-width: 800px) {
+    .container-homepage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        // margin-left: 5%;
+        // margin-right: 5%;
+        height: 100vh;
+        gap: 10%;
+    }
+
+    .hp-col .col-left {
+        margin-bottom: 20px;
+    }
+
+    .hp-col:last-child {
+        margin-bottom: 0;
+    }
+
+    .fancy-name {
+        font-size: 70px;
+    }
+
+    .home-body {
+        background: linear-gradient(to bottom, #2F4F4F, #778899);
+    }
+}
+/* ------------------------- END home mobile */

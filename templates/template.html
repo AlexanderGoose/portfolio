@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <script src="/static/script.js"></script>
+    <link rel="icon" type="image/png" href="/static/images/goose_favicon.png">
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Italiana&family=Italianno&family=Ojuju:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Slick Carousel CSS / not currently using anymore -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body class="{{ body_class }}">
+    
+<div class="container-navbar">
+    <div class="navbar left">
+        <a class="logo" href="{{ url_for('home') }}">Goose</a>
+    </div>
+
+    <div class="navbar right">
+        <a class="navbar-item home-page-link" href="{{ url_for('home') }}">Home</a>
+        <a class="navbar-item" href="{{ url_for('projects') }}">Projects</a>
+        <a class="navbar-item" href="{{ url_for('resume') }}">Résumé</a>
+        <a class="navbar-item" href="{{ url_for('about') }}">About</a>
+    </div>
+</div>
+
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Slick Carousel JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+</html>
