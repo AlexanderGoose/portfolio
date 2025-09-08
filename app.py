@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from flask_talisman import Talisman
+#from flask_talisman import Talisman
 import weather
 
 app = Flask(__name__)
