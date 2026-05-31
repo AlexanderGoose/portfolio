@@ -184,7 +184,8 @@ img {
 
     .col-2,
     .col-4,
-    .col-3 {
+    .col-3,
+    .flip {
         flex-direction: column-reverse;
     }
 
