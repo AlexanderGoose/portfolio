@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
 #from flask_talisman import Talisman
 import weather
 import breweries
@@ -20,8 +20,17 @@ def resume():
 
 @app.route('/brewery')
 def brewery():
-    brewery_data = breweries.get_breweries()
-    return render_template('brewery.html', breweries=brewery_data)
+    return render_template('brewery.html')
+
+
+@app.route('/api/breweries')
+def api_breweries():
+    lat = request.args.get("lat")
+    lon = request.args.get("lon")
+
+    brewery_data = breweries.get_breweries(lat, lon)
+
+    return jsonify(brewery_data)
 
 
 @app.route('/about')
