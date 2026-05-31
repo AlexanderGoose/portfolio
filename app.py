@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 #from flask_talisman import Talisman
 import weather
+import breweries
 
 app = Flask(__name__)
 # talisman = Talisman(app) # forces https
@@ -16,6 +17,12 @@ def projects():
 @app.route('/resume')
 def resume():
     return render_template('resume.html', title='Resume')
+
+@app.route('/brewery')
+def brewery():
+    brewery_data = breweries.get_breweries()
+    return render_template('brewery.html', breweries=brewery_data)
+
 
 @app.route('/about')
 def about():
