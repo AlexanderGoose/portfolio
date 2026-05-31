@@ -3,26 +3,83 @@
 {% block content %}
 
 <div class="project-container-main">
-    
-    <!-- PROJECT 1 - DB -->
+
+        <!-- PROJECT 1 - DB -->
     <div>
         <h1 class="proj-title">The Loch Database</h1>
 
         <div class="proj-column-container research">
             <div class="proj-col">
-                <!-- <img class="proj-img animate" src="/static/images/loch.png" alt="data testing img"> -->
-                <img class="proj-img animate" src="/static/images/loch_db.png" alt="data testing img">
+                <img class="proj-img animate" src="/static/images/shiny.png" alt="data testing img">
             </div>
 
             <div class="proj-col">
                 <div class="project-page-text">
-                    <p>Funded by a USGS grant, I have been designing and implementing a relational database to store lake sampling data collected at The Loch Lake in Rocky Mountain National Park.</p>
-                    <p>Additionally, I've created a series of QA/QC scripts to validate and transform large datasets, algorithms to push new data, and a data dashboard to interact with the db.</p>
-                    <a href="https://lochvale.shinyapps.io/shiny/" target="_blank">Check out the data here!</a>
+                    <p>As part of a USGS-funded research project, I designed and implemented a relational database to manage long-term ecological data collected at The Loch Lake in Rocky Mountain National Park.</p>
+                    <p>Additionally, I work closely with PhD students to create scripts to clean, validate, and add new data. My work has saved researchers many hours by using R to create effecient scripts.</p>
+                    <p>I've also created a data dashboard using Shiny, check it out <a href="https://lochvale.shinyapps.io/shiny/" target="_blank">here!</a></p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div>
+        <h1 class="proj-title">Pomodoro Timer</h1>
+
+        <div class="proj-column-container research">
+            <div class="proj-col">
+                <div class="project-page-text">
+                    <p>Go ahead and try it out, you can actually use it.</p>
+                    <p>Originally designed as a stand-alone electron app, this project uses JS to create a resonsive pomodoro study timer.</p>
+                </div>
+            </div>
+
+            <div class="proj-col">
+                <div class="pomo">
+                    <h2 style="text-align: center;">🍄 Pomodoro Timer 🌿</h2>
+                    <div class="containerMain">
+                        
+
+                        <div class="timerButtons">
+                            <button id="startTimer">Start</button>
+                            <button id="pauseTimer">Pause</button>
+                            <button id="resetTimer">Reset</button>
+                        </div>
+
+                        <div class="middleSection">
+                            <p id="countdown">30:00</p>
+                            <p id="soundName"></p>
+                        </div>
+
+                        <div class="soundButtons">
+                            <button id="playBtn">Play</button>
+                            <button id="pauseBtn">Pause</button>
+                            <button id="nextBtn">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="proj-title">Brewery Finder</h1>
+
+        <div class="proj-column-container research">
+            <div class="proj-col">
+                <img class="proj-img animate" src="/static/images/breweries.png" alt="data testing img">
+            </div>
+            
+            <div class="proj-col">
+                <div class="project-page-text">
+                    <p>Check it out <a href="{{ url_for('brewery') }}">here.</a> (Heads up: it'll ask for your location)</p>
+                    <p>This project uses several APIs to pinpoint the user, find nearby breweries, and adds them to a interactable map. Click on the pins to get the names.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
 
     <!-- PROJECT 2 - RECIPE -->
     <div>
@@ -151,4 +208,6 @@
 
 </div>
 
+    <script src="{{ url_for('static', filename='counter.js') }}"></script>
+    <script src="{{ url_for('static', filename='audio.js') }}"></script>
 {% endblock %}

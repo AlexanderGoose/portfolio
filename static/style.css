@@ -426,6 +426,64 @@ span.fade {
 }
 
 
+/* pomodoro timer */
+.pomo {
+    background-color: #12343b;
+    color: #e1b382;
+    font-family: 'Minecraft', monospace;
+    image-rendering: pixelated;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.pomo .containerMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.pomo .timerButtons,
+.pomo .soundButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pomo #soundName {
+    text-align: center;
+}
+
+.pomo #countdown {
+    font-size: 48px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 180px;
+}
+
+.pomo button {
+    background-color: #2d545e;
+    color: #e1b382;
+    border: 2px solid #c89666;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-family: 'Minecraft', monospace;
+    font-size: 14px;
+}
+
+.pomo button:hover {
+    transform: scale(1.05);
+    background-color: #c89666;
+    color: #12343b;
+}
+
+.pomo button:active {
+    transform: scale(0.95);
+}
+
 /* ------------------------- media screen */
 @media only screen and (max-width: 800px) {
 
